@@ -1,0 +1,4 @@
+C:\Users\ksmol\Desktop\VendingMachine\tests\VendingMachine.Test\obj\Debug\netcoreapp2.2\VendingMachine.Test.csprojAssemblyReference.cache
+C:\Users\ksmol\Desktop\VendingMachine\tests\VendingMachine.Test\obj\Debug\netcoreapp2.2\VendingMachine.Test.csproj.CoreCompileInputs.cache
+C:\Users\ksmol\Desktop\VendingMachine\tests\VendingMachine.Test\obj\Debug\netcoreapp2.2\VendingMachine.Test.AssemblyInfoInputs.cache
+C:\Users\ksmol\Desktop\VendingMachine\tests\VendingMachine.Test\obj\Debug\netcoreapp2.2\VendingMachine.Test.AssemblyInfo.cs

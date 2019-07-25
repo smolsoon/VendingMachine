@@ -1,0 +1,11 @@
+C:\Users\ksmol\Desktop\VendingMachine\src\VendingMachine\bin\Debug\netcoreapp2.2\VendingMachine.deps.json
+C:\Users\ksmol\Desktop\VendingMachine\src\VendingMachine\bin\Debug\netcoreapp2.2\VendingMachine.runtimeconfig.json
+C:\Users\ksmol\Desktop\VendingMachine\src\VendingMachine\bin\Debug\netcoreapp2.2\VendingMachine.runtimeconfig.dev.json
+C:\Users\ksmol\Desktop\VendingMachine\src\VendingMachine\bin\Debug\netcoreapp2.2\VendingMachine.dll
+C:\Users\ksmol\Desktop\VendingMachine\src\VendingMachine\bin\Debug\netcoreapp2.2\VendingMachine.pdb
+C:\Users\ksmol\Desktop\VendingMachine\src\VendingMachine\obj\Debug\netcoreapp2.2\VendingMachine.csprojAssemblyReference.cache
+C:\Users\ksmol\Desktop\VendingMachine\src\VendingMachine\obj\Debug\netcoreapp2.2\VendingMachine.csproj.CoreCompileInputs.cache
+C:\Users\ksmol\Desktop\VendingMachine\src\VendingMachine\obj\Debug\netcoreapp2.2\VendingMachine.AssemblyInfoInputs.cache
+C:\Users\ksmol\Desktop\VendingMachine\src\VendingMachine\obj\Debug\netcoreapp2.2\VendingMachine.AssemblyInfo.cs
+C:\Users\ksmol\Desktop\VendingMachine\src\VendingMachine\obj\Debug\netcoreapp2.2\VendingMachine.dll
+C:\Users\ksmol\Desktop\VendingMachine\src\VendingMachine\obj\Debug\netcoreapp2.2\VendingMachine.pdb
