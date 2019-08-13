@@ -1,9 +1,10 @@
+using System;
 using System.Collections.Generic;
 using VendingMachine.Models;
 
 namespace VendingMachine.Services
 {
-    public class CoinService
+    public class CoinService : ICoinService
     {
         private readonly Dictionary<CoinType, int> _coinsAvailable;
 
@@ -20,13 +21,13 @@ namespace VendingMachine.Services
 
             if (amountRequiredInChange > 0)
             {
-                CalculateChangeCoins(amountRequiredInChange, coinsAvailableForChange, changeAvailableToReturn, CoinType.Dollar);
+                CalculateCoins(amountRequiredInChange, coinsAvailableForChange, changeAvailableToReturn, CoinType.Dollar);
             }
 
             return changeAvailableToReturn;
         }
 
-        private static void CalculateChangeCoins(decimal remainingAmountRequiredInChange, IDictionary<CoinType, int> coinsAvailable, IDictionary<CoinType, int> coinsToReturnInChange, CoinType currentCoinType)
+        private static void CalculateCoins(decimal remainingAmountRequiredInChange, IDictionary<CoinType, int> coinsAvailable, IDictionary<CoinType, int> coinsToReturnInChange, CoinType currentCoinType)
         {
             if (remainingAmountRequiredInChange > 0)
             {
@@ -42,7 +43,7 @@ namespace VendingMachine.Services
                     }
                     coinsAvailable[currentCoinType] -= 1;
                     remainingAmountRequiredInChange -= currentCoinType.Value();
-                    CalculateChangeCoins(remainingAmountRequiredInChange, coinsAvailable, coinsToReturnInChange, currentCoinType);
+                    CalculateCoins(remainingAmountRequiredInChange, coinsAvailable, coinsToReturnInChange, currentCoinType);
                 }
                 else
                 {
@@ -50,19 +51,29 @@ namespace VendingMachine.Services
                     switch (currentCoinType)
                     {
                         case CoinType.Nickel:
-                            CalculateChangeCoins(remainingAmountRequiredInChange, coinsAvailable, coinsToReturnInChange, CoinType.Nickel);
+                            CalculateCoins(remainingAmountRequiredInChange, coinsAvailable, coinsToReturnInChange, CoinType.Nickel);
                             break;
                         case CoinType.Dime:
-                            CalculateChangeCoins(remainingAmountRequiredInChange, coinsAvailable, coinsToReturnInChange, CoinType.Dime);
+                            CalculateCoins(remainingAmountRequiredInChange, coinsAvailable, coinsToReturnInChange, CoinType.Dime);
                             break;
                         case CoinType.Quartet:
-                            CalculateChangeCoins(remainingAmountRequiredInChange, coinsAvailable, coinsToReturnInChange, CoinType.Quartet);
+                            CalculateCoins(remainingAmountRequiredInChange, coinsAvailable, coinsToReturnInChange, CoinType.Quartet);
                             break;
                         case CoinType.Dollar:
-                            CalculateChangeCoins(remainingAmountRequiredInChange, coinsAvailable, coinsToReturnInChange, CoinType.Dollar);
+                            CalculateCoins(remainingAmountRequiredInChange, coinsAvailable, coinsToReturnInChange, CoinType.Dollar);
                             break;
                     }
                 }
+            }
+        }
+
+
+
+        public static void Calculate(Dictionary<CoinType,int> returnCoin)
+        {
+            foreach (var item in returnCoin)
+            {
+                Console.WriteLine(item);
             }
         }
     }
